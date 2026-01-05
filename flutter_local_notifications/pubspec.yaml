@@ -12,6 +12,8 @@ dependencies:
     sdk: flutter
   flutter_local_notifications_linux: ^7.0.0-dev.2
   flutter_local_notifications_windows: ^2.0.0-dev.3
+  flutter_local_notifications_ohos:
+    path: ../flutter_local_notifications_ohos
   flutter_local_notifications_platform_interface: ^10.0.0-dev.2
   timezone: ^0.10.0
 
@@ -41,6 +43,8 @@ flutter:
         default_package: flutter_local_notifications_linux
       windows:
         default_package: flutter_local_notifications_windows
+      ohos:
+        default_package: flutter_local_notifications_ohos
 
 environment:
   sdk: ^3.8.0

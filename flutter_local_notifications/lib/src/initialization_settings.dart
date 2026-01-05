@@ -9,6 +9,7 @@ class InitializationSettings {
     this.macOS,
     this.linux,
     this.windows,
+    this.ohos,
   });
 
   /// Settings for Android.
@@ -37,4 +38,10 @@ class InitializationSettings {
 
   /// Settings for Windows.
   final WindowsInitializationSettings? windows;
+
+  /// Settings for OpenHarmony (OHOS).
+  ///
+  /// It is nullable, because we don't want to force users to specify settings
+  /// for platforms that they don't target.
+  final OhosInitializationSettings? ohos;
 }
